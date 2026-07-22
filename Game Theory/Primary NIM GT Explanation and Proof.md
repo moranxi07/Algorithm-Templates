@@ -8,7 +8,7 @@ Conclusion
 
 Suppose there are n piles of stones, with sizes a1,a2,…,ana1;
 ​
-If a1^a2^...^an≠0
+If a1 ^ a2^ ... ^ an ≠ 0
 then the first player wins; otherwise, the first player loses.
 
 Proof
