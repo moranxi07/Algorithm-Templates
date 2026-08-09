@@ -1,4 +1,8 @@
-
+// 二分求LIS
+// 解释:
+// 1. 将城市按南岸坐标排序
+// 2. 提取北岸坐标，求其LIS长度
+// 3. 使用二分法求LIS长度，时间复杂度为O(nlogn)
 #include <iostream>
 #include <vector>
 #include <algorithm>
