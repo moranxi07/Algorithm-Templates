@@ -3,6 +3,60 @@
 // 1. 将城市按南岸坐标排序
 // 2. 提取北岸坐标，求其LIS长度
 // 3. 使用二分法求LIS长度，时间复杂度为O(nlogn)
+
+//数组版
+/*#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+const int N = 100010;
+
+int n;
+int a[N];
+int q[N];
+
+int main()
+{
+    cin >> n;
+
+    for(int i = 1; i <= n; i++)
+    {
+        cin >> a[i];
+    }
+
+    int len = 0;
+
+    for(int i = 1; i <= n; i++)
+    {
+        int l = 1, r = len;
+
+        // 找第一个 >= a[i] 的位置
+        while(l < r)
+        {
+            int mid = l + r >> 1;
+
+            if(q[mid] >= a[i])
+                r = mid;
+            else
+                l = mid + 1;
+        }
+
+        // a[i] 比当前所有结尾都大
+        if(len == 0 || q[len] < a[i])
+        {
+            q[++len] = a[i];
+        }
+        else
+        {
+            q[l] = a[i];
+        }
+    }
+
+    cout << len << endl;
+
+    return 0;
+}*/
 #include <iostream>
 #include <vector>
 #include <algorithm>

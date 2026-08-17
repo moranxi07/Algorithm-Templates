@@ -2,6 +2,8 @@
 // 给定一棵树，求树中连通点集的数量。
 // dp[u]表示以u为根的子树中连通点集的数量。
 // 状态转移方程：dp[u] = ∏(dp[v] + 1)，其中v为u的子节点。
+// 连通点集是什么？
+// 连通点集是指树中任意两个点之间都存在路径的点集。
 #include <iostream>
 #include <cstring>
 #include <algorithm>
