@@ -1,3 +1,5 @@
+// 鸽笼问题&隔板问题
+// 题意: 给定n个数, 你可以选择任意个数, 使得选择的数中没有连续两个相同的数, 求这些数的和的最大值    
 #include <iostream>
 #include <cstring>
 #include <algorithm>
