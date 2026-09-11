@@ -63,14 +63,14 @@ int main()
 
     for(int i = n - 1; i >= 0; i --)
     {
-        suffix[i] = max(suffix[i + 1], v[i].b);
+        suffix[i] = max(suffix[i + 1], v[i].b); // 后i个点的最大半径；
     }
 
     for(int i = 0; i < n; i ++)
     {
-        int ra = v[i].a;
+        int ra = v[i].a;  
 
-        int rb = suffix[i + 1];
+        int rb = suffix[i + 1]; // 前i个给第一个圆心覆盖，后n-i个给第二个圆心覆盖;
 
         ans = min(ans, ra + rb);
     }
